@@ -4,16 +4,14 @@ const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
 
-const DATABASE_URL = process.env.DATABASE_URL;
-
 const db = knex({
   client: "pg",
   connection: {
-    host: "dpg-cg8o7v82qv21l3bgnjsg-a.singapore-postgres.render.com",
-    user: "smartbrain_cj1w_user",
-    port: 5432,
-    password: "vZOchA61rhu1KbOrqIDb0yrUisHsHpGb",
-    database: "smartbrain_cj1w",
+    host: "containers-us-west-56.railway.app",
+    user: "postgres",
+    port: 6597,
+    password: "FOk7ueaWrnEu4SwWphGB",
+    database: "railway",
   },
 });
 
@@ -23,7 +21,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("it is working and database port entered");
+  res.send("it is working and database rails");
 });
 
 app.post("/signin", (req, res) => {
