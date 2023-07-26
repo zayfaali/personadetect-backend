@@ -7,11 +7,11 @@ const knex = require("knex");
 const db = knex({
   client: "pg",
   connection: {
-    host: "containers-us-west-56.railway.app",
-    user: "postgres",
-    port: 6597,
-    password: "FOk7ueaWrnEu4SwWphGB",
-    database: "railway",
+    host: "dpg-cj0ihm98g3n9brtd0d5g-a.singapore-postgres.render.com",
+    user: "personadetect_user",
+    port: 5432,
+    password: "kQnaIER1MBAjd2u1LypnFSbJnoQ5qKaN",
+    database: "personadetect",
   },
 });
 
